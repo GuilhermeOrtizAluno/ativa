@@ -162,3 +162,48 @@ nav.header-nav li a {
 #check:checked ~ nav.header-nav{
     transform: translateX(300px);
 }
+
+.title-item {
+    position: relative;
+    margin-right: 10px;
+}
+.title-item:hover .items {
+    opacity: 1;
+}
+.title-item img {
+    width: 100%;
+}
+.title-item .items {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+    background: -prefix-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,.7));
+    background: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.7));
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+}
+.title-item h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 5px auto;
+}
+.title-item .btn-play {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 100px;
+   transform: translate(-50%, -50%);
+}
+.title-item .btn-play i {
+    color: red;
+}
+
+.title-item .btn-play i:hover {
+    color: darkred;
+}
