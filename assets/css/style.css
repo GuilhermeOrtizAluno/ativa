@@ -123,6 +123,7 @@ label[for="check"]{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
 }
 
 #check{
@@ -206,4 +207,13 @@ nav.header-nav li a {
 
 .title-item .btn-play i:hover {
     color: darkred;
+}
+
+.list-titles img {
+    width: 250px;
+    height: 100px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #8fbc8f;
 }
