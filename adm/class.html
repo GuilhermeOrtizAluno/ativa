@@ -41,30 +41,26 @@
                 <div class="card-body">
                     <form>
                         <div class="input-group form-group">
+                            <input type="text" class="form-control" placeholder="Cadastrar Turma">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <span class="input-group-text"><i class="fas fa-plus"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Nome completo">
-                            
                         </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="E-mail">
+                        <div class="form-group">
+                            <select name="state" id="state" class="form-control">
+                                <option >Selecionar Turma</option>
+                                <option >Turma A</option>
+                                <option >Turma B</option>
+                                <option >Turma C</option>
+                            </select>
                         </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Usuario">
-                            
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Senha">
+                        <div class="form-group">
+                            <select name="state" id="state" class="form-control">
+                                <option >Deficiencia</option>
+                                <option >ser o luan</option>
+                                <option >ser parecido com o luan</option>
+                                <option >Luan</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <a href="teacher.html" type="submit" class="btn float-right login_btn">
@@ -78,100 +74,60 @@
             </div>
             <div class="card form ml-1 overflow-auto">
                 <div class="card-header">
-                    <h3>Lista de Professores</h3>
+                    <h3>Lista de Alunos</h3>
                 </div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col" style="color: greenyellow;">Nome</div>
-                        <div class="col"style="color: greenyellow;" >Usuario</div>
+                        <div class="col" style="color: greenyellow;">Disponiveis</div>
+                        <div class="col"style="color: greenyellow;" >Inseridos</div>
                     </div>
                     <div class="row">
-                        <div class="col">Guilherme Ortiz</div>
-                        <div class="col">G.Otiz</div>
+                        <div class="col"><i class="fas fa-plus"></i> Guilherme Ortiz</div>
+                        <div class="col"><i class="fas fa-minus"></i> Luan Leme</div>
                     </div>
                     <div class="row">
-                        <div class="col">Luan Leme</div>
-                        <div class="col">L.Leme</div>
+                        <div class="col"><i class="fas fa-plus"></i> Simone Nasser</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao Marcelo</div>
                     </div>
                     <div class="row">
-                        <div class="col">Simone Nasser</div>
-                        <div class="col">S.Nasser</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Eduarda</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao Eduardo</div>
                     </div>
                     <div class="row">
-                        <div class="col">Joao Marcelo</div>
-                        <div class="col">J.Marcelo</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Franciele</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao victor</div>
                     </div>
                     <div class="row">
-                        <div class="col">Maria Eduarda</div>
-                        <div class="col">M.Eduarda</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Cunha</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao Miguel</div>
                     </div>
                     <div class="row">
-                        <div class="col">Joao Eduardo</div>
-                        <div class="col">J.eduardo</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Gabriela</div>
+                        <div class="col"><i class="fas fa-minus"></i> M.Gabriela</div>
                     </div>
                     <div class="row">
-                        <div class="col">Maria Franciele</div>
-                        <div class="col">M.Franciele</div>
+                        <div class="col"><i class="fas fa-plus"></i> Guilherme Ortiz</div>
+                        <div class="col"><i class="fas fa-minus"></i> Luan Leme</div>
                     </div>
                     <div class="row">
-                        <div class="col">Joao victor</div>
-                        <div class="col">J.Victor</div>
+                        <div class="col"><i class="fas fa-plus"></i> Simone Nasser</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao Marcelo</div>
                     </div>
                     <div class="row">
-                        <div class="col">Maria Cunha</div>
-                        <div class="col">M.Cunha</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Eduarda</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao Eduardo</div>
                     </div>
                     <div class="row">
-                        <div class="col">Joao Miguel</div>
-                        <div class="col">J.Miguel</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Franciele</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao victor</div>
                     </div>
                     <div class="row">
-                        <div class="col">Maria Gabriela</div>
-                        <div class="col">M.Gabriela</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Cunha</div>
+                        <div class="col"><i class="fas fa-minus"></i> Joao Miguel</div>
                     </div>
                     <div class="row">
-                        <div class="col">Guilehrme Ortiz</div>
-                        <div class="col">G.Otiz</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Luan Leme</div>
-                        <div class="col">L.Leme</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Simone Aires</div>
-                        <div class="col">S.Aires</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Joao Marcelo</div>
-                        <div class="col">J.Marcelo</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Maria Eduarda</div>
-                        <div class="col">M.Eduarda</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Joao Eduardo</div>
-                        <div class="col">J.eduardo</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Maria Franciele</div>
-                        <div class="col">M.Franciele</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Joao victor</div>
-                        <div class="col">J.Victor</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Maria Cunha</div>
-                        <div class="col">M.Cunha</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Joao Miguel</div>
-                        <div class="col">J.Miguel</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Maria Gabriela</div>
-                        <div class="col">M.Gabriela</div>
+                        <div class="col"><i class="fas fa-plus"></i> Maria Gabriela</div>
+                        <div class="col"><i class="fas fa-minus"></i> M.Gabriela</div>
                     </div>
                     
                 </div>
