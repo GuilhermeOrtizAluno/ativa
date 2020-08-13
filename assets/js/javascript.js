@@ -1,7 +1,7 @@
 var count=0;
 var password = [];
 var aux; 
-var puppils = '../../pupils.html'
+var puppils = '../../pupils/pupils.html'
 
 function buttonAluno(clicked_id) {
     
