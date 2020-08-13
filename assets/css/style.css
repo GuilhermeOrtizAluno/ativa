@@ -28,12 +28,16 @@ height: 100%;
 align-content: center;
 }
 
-.card{
-min-height: 370px;
+.card.form{
+height: 370px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
+}
+
+.card.form.aluno{
+    height: auto;
 }
 
 .social_icon span{
@@ -214,4 +218,8 @@ nav.header-nav li a {
 
 .nav-tabs .nav-link.active {
     background-color: #8fbc8f;
+}
+
+.card.ml-1 .row .col{
+    color: bisque;
 }
