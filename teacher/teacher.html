@@ -23,21 +23,25 @@
     </header>
     <div class="container mt-4">
         <nav class="nav nav-tabs">
-            <a href="#tab-1" class="nav-link active" data-toggle="tab">Portugues</a>
-            <a href="#tab-2" class="nav-link" data-toggle="tab">Analise POO</a>
-            <a href="#tab-3" class="nav-link" data-toggle="tab">Historia</a>
-            <a href="#tab-2" class="nav-link" data-toggle="tab">Informatica</a>
-            <a href="#tab-3" class="nav-link" data-toggle="tab">Geografia</a>
+            <a href="#tab-1" class="nav-link active" data-toggle="tab">Port. - Turma A</a>
+            <a href="#tab-2" class="nav-link" data-toggle="tab">A.P.O.O. - Turma do coração</a>
+            <a href="#tab-3" class="nav-link" data-toggle="tab">His. - Turma C</a>
             <a href="#tab-3" class="nav-link" data-toggle="tab">+</a>
         </nav>
 
         <div class="tab-content">
             <div class="tab-pane active" id="tab-1">
                 <div class="row">
-                    <div class="col-4"><h4 class="mt-2">Grau: Escolar</h4>
-                        <p>Desenvolver as capacidades de oralidade, leitura, escrita e produção de texto através de didáticas e abordagens diferentes</p></div>
+                    <div class="col-4">
+                        <h4 class="mt-2">Portugues</h4>
+                        <h5 class="mt-2">Turma A</h5>
+                        <h5 class="mt-2">Grau: Escolar</h5>
+                        <p>Desenvolver as capacidades de oralidade, leitura, escrita e produção de texto através de didáticas e abordagens diferentes</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </div>
                     <div class="col-8">
-                        <a href="#modal-1" data-toggle="modal"><img src="../assets/images/calendario.png" alt="" style="width: 100%;"></a>
+                        <a href="#modal-2" data-toggle="modal"><img src="../assets/images/calendario.png" alt="" style="width: 100%;"></a>
                     </div>
                 </div>
                 
@@ -49,6 +53,87 @@
             
         </div>
         <div class="modal" tabindex="-1" role="dialog" id="modal-1">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Materia" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Apreviação da Materia" class="form-control">
+                            </div>
+                
+                            <div class="form-group">
+                                <select name="state" id="state" class="form-control">
+                                    <option value="SP">Turma</option>
+                                    <option value="RJ">Turma A</option>
+                                    <option value="MG">Turma B</option>
+                                    <option value="PR">Turma C</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <select name="state" id="state" class="form-control">
+                                    <option value="SP">Grau</option>
+                                    <option value="RJ">Escolar</option>
+                                    <option value="MG">Escolar</option>
+                                    <option value="PR">Escolar</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Descrição"></textarea>
+                            </div>
+                
+                            <button type="submit" class="btn btn-primary float-right">Cadastrar</button>
+                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="modal-3">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar Aula</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Nome da Atividade" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Link do jogo" class="form-control">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="upload">Imagem</label>
+                                <input type="file" name="upload" id="upload" class="form-control-file">
+                            </div>
+                
+                            <button type="submit" class="btn btn-primary float-right">Cadastrar</button>
+                
+                        </form>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" role="dialog" id="modal-2">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -65,12 +150,12 @@
                                     
                                 </div>
                                 <div class="title-item">
-                                    <img src="../assets/images/list-port1.jpg" class="img-fluid">
+                                    <a href="#modal-3" data-toggle="modal"><img src="../assets/images/list-port1.jpg" class="img-fluid">
                                     <div class="items">
                                         <div class="left-side">
                                             <h2>Jogo da Palavra</h2>
                                         </div>
-                                    </div>
+                                    </div></a>
                                 </div>
                                 
                                 <div class="title-item">
