@@ -68,42 +68,41 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        
 
-                            <div class="form-group">
-                                <input type="text" placeholder="Materia" class="form-control">
-                            </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Materia" class="form-control">
+                        </div>
 
-                            <div class="form-group">
-                                <input type="text" placeholder="Apreviação da Materia" class="form-control">
-                            </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Apreviação da Materia" class="form-control">
+                        </div>
+            
+                        <div class="form-group">
+                            <select name="state" id="state" class="form-control">
+                                <option value="SP">Turma</option>
+                                <option value="RJ">Turma A</option>
+                                <option value="MG">Turma B</option>
+                                <option value="PR">Turma C</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="state" id="state" class="form-control">
+                                <option value="SP">Grau</option>
+                                <option value="RJ">Escolar</option>
+                                <option value="MG">Escolar</option>
+                                <option value="PR">Escolar</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Descrição"></textarea>
+                        </div>
+
                 
-                            <div class="form-group">
-                                <select name="state" id="state" class="form-control">
-                                    <option value="SP">Turma</option>
-                                    <option value="RJ">Turma A</option>
-                                    <option value="MG">Turma B</option>
-                                    <option value="PR">Turma C</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <select name="state" id="state" class="form-control">
-                                    <option value="SP">Grau</option>
-                                    <option value="RJ">Escolar</option>
-                                    <option value="MG">Escolar</option>
-                                    <option value="PR">Escolar</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Descrição"></textarea>
-                            </div>
-
-                            
-                            <button type="submit" class="btn btn-primary float-right">Cadastrar</button>
-                
-                        </form>
+                        
+                        <button type="submit" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal-4">Continuar</button>
                     </div>
                 </div>
             </div>
@@ -189,6 +188,38 @@
                                 </div>                                                                     
                             </div>
                         </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" role="dialog" id="modal-4">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="satate">Assuntos</label>
+                            <select name="state" id="state" class="form-control" multiple>
+                                <option value="SP">Redação</option>
+                                <option value="RJ">Gêneros textuais</option>
+                                <option value="MG">Interpretação de texto</option>
+                                <option value="PR">Domínio da norma culta</option>
+                            </select>
+                        </div>
+                       <p class="text-center">OU</p>
+                        <div class="form-group">
+                            <input type="text" placeholder="Assunto" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Descrição"></textarea>
+                        </div>    
+                        <button type="submit" class="btn btn-primary float-right">Finalizar</button>
                     </div>
                 </div>
             </div>
